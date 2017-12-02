@@ -29,9 +29,9 @@ Begin VB.Form StartUp
       Begin VB.Label Label1 
          Caption         =   "DPZK"
          Height          =   975
-         Left            =   2160
+         Left            =   2280
          TabIndex        =   1
-         Top             =   720
+         Top             =   1080
          Width           =   2055
       End
    End
@@ -41,9 +41,17 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+Dim time As Integer
+
 
 Private Sub Timer1_Timer()
-Form1.Show
-StartUp.Hide
-Timer1.Enabled = False
+If Not time = 1 Then
+DPZKMAIN.Show
+StartUp.Visible = False
+Timer1.Enabled = True
+time = 1
+Else
+End
+End If
+
 End Sub
