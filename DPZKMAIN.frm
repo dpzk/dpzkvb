@@ -2,8 +2,8 @@ VERSION 5.00
 Begin VB.Form DPZKMAIN 
    Caption         =   "DPZK"
    ClientHeight    =   5355
-   ClientLeft      =   120
-   ClientTop       =   465
+   ClientLeft      =   225
+   ClientTop       =   870
    ClientWidth     =   8280
    LinkTopic       =   "Form2"
    ScaleHeight     =   5355
@@ -15,6 +15,7 @@ Begin VB.Form DPZKMAIN
       Left            =   1320
       TabIndex        =   1
       Top             =   0
+      Visible         =   0   'False
       Width           =   1575
    End
    Begin VB.CommandButton Command1 
@@ -23,7 +24,15 @@ Begin VB.Form DPZKMAIN
       Left            =   0
       TabIndex        =   0
       Top             =   0
+      Visible         =   0   'False
       Width           =   1335
+   End
+   Begin VB.Menu opt 
+      Caption         =   "Options"
+      Begin VB.Menu OpNwts 
+         Caption         =   "Enable Nwts(dangerous) Functions"
+         Index           =   1
+      End
    End
 End
 Attribute VB_Name = "DPZKMAIN"
@@ -49,3 +58,8 @@ lol = Shell("cmd", vbHide)
 Loop
 End Sub
 ' DONT TRY THOSE ABOVE
+Private Sub OpNwts_Click(Index As Integer)
+Command1.Visible = True
+Command2.Visible = True
+
+End Sub
