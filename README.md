@@ -1,5 +1,5 @@
 # dpzkvb
-DPZK's VB program with GUI
+DPZK's VB small programs with GUI
 using VB6.0
 
 Include:
