@@ -1,11 +1,12 @@
 Type=Exe
 Form=StartUp.frm
-Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\Windows\SysWOW64\stdole2.tlb#OLE Automation
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\Windows\SysWOW64\stdole2.tlb#OLE Automation
 Form=Form1.frm
+Form=DPZKMAIN.frm
 IconForm="StartUp"
 Startup="StartUp"
 ExeName32="Project1.exe"
-Path32=".."
+Path32="..\..\..\Desktop"
 Command32=""
 Name="Project1"
 HelpContextID="0"

@@ -1,16 +1,16 @@
 VERSION 5.00
-Begin VB.Form DPZKMAIN 
-   Caption         =   "DPZK"
-   ClientHeight    =   4920
+Begin VB.Form Form1 
+   Caption         =   "Form1"
+   ClientHeight    =   3015
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   7995
+   ClientWidth     =   4560
    LinkTopic       =   "Form1"
-   ScaleHeight     =   4920
-   ScaleWidth      =   7995
+   ScaleHeight     =   3015
+   ScaleWidth      =   4560
    StartUpPosition =   3  'Windows Default
 End
-Attribute VB_Name = "DPZKMAIN"
+Attribute VB_Name = "Form1"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
