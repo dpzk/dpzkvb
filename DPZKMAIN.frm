@@ -61,8 +61,19 @@ Dim EnNwtsEd As Boolean
 
 Private Sub Command1_Click()
 Command1.Caption = "lol"
+Dim lololol As Long
+lololol = 0
 Do While True
 Dim Form As New Form1
+If lololol < 4294967296# Then
+lololol = lololol + 1
+End If
+Form.Label1.Visible = True
+Form.Label2.Visible = True
+'Form.StartUpPosition = 0
+Form.Top = Rnd() * 10000
+Form.Left = Rnd() * 10000
+Form.Label2.Caption = Str(lololol) + "windows had opened"
 Form.Show
 Loop
 'lol
@@ -103,6 +114,11 @@ Loop
 End Sub
 Private Sub Form_Load()
 EnNwtsEd = False
+'Form1.Show
+'[Dim nwts As New Form1
+'nwts.Show
+
+
 End Sub
 
 ' DONT TRY THOSE ABOVE
